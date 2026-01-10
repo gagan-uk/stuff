@@ -11,10 +11,10 @@ class eData {
   int salary;
 
   void showEmployeeDetails(int id) {
-    System.out.println(name);
-    System.out.println(role);
-    System.out.println(yoe);
-    System.out.println(salary);
+    System.out.println("Employee name:" + name);
+    System.out.println("Current role:" + role);
+    System.out.println("Exprience:" + yoe);
+    System.out.println("Salary:" + salary);
   }
 
   void inputEmployeeDetails() {
@@ -35,12 +35,12 @@ class eData {
 public class company {
 
   public static void main(String[] args) {
-
+    Scanner input = new Scanner(System.in);
     eData employee = new eData();
 
     employee.inputEmployeeDetails();
 
-    employee.showEmployeeDetails(11);
+    employee.showEmployeeDetails(0);
 
   }
 
